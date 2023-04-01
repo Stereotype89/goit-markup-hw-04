@@ -337,8 +337,15 @@ body {
   background-color: #2e2f42;
 }
 
+.div-ftr {
+  display: flex;
+}
+
 .footer-container {
+  display: flex;
   margin-right: 120px;
+
+  flex-direction: column;
 }
 
 .foofter-t {

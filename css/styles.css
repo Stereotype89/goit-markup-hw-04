@@ -3,6 +3,7 @@
   --white_: #f4f4fd;
   --blue: #4d5ae5;
   --blue_: #404bbf;
+  --green: #31d0aa;
 }
 
 p,
@@ -133,11 +134,15 @@ body {
   color: #434455;
   padding-right: 15px;
 }
+.line:is(:hover, :focus) {
+  border-bottom: solid 4px #404bbf;
+  padding-bottom: 20px;
+  border-radius: 2px;
+}
 
 /**--Section1 -INDEX.HTML--*/
 
 .buttonsect_ {
-  background-color: #2e2f42;
   padding-top: 188px;
   padding-bottom: 188px;
   background-image: linear-gradient(
@@ -145,9 +150,12 @@ body {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office.jpg);
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
 }
 
 .div-buttonsect_ {
@@ -179,7 +187,6 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
-
   border-radius: 4px;
   text-align: center;
   padding: 16px 32px;
@@ -222,6 +229,17 @@ body {
   letter-spacing: 0.02em;
   color: #434455;
   text-align: left;
+}
+
+.link-main-icon {
+  box-sizing: border-box;
+  height: 112px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f4f4fd;
+  border-radius: 4px;
+  margin-bottom: 8px;
 }
 
 /**------------Section3 -INDEX.HTML---------**/
@@ -307,17 +325,24 @@ body {
   height: 100%;
   border-radius: 50%;
   background-color: var(--blue);
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .link-item:is(:hover, :focus) {
   background-color: var(--blue_);
+  transition-duration: 400ms;
+}
+
+.soc-icon {
+  fill: #f4f4fd;
 }
 
 /** Section-5 **/
 .customers {
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 72px;
   background-color: #ffffff;
   text-align: center;
   font-family: "Roboto";
@@ -327,6 +352,28 @@ body {
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: #2e2f42;
+}
+
+.link-section-five {
+  box-sizing: border-box;
+  height: 88px;
+  width: 168px;
+  border: 2px solid #8e8f99;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #8e8f99;
+}
+
+.section-five {
+  padding-bottom: 120px;
+}
+
+.link-section-five:is(:hover, :focus) {
+  fill: var(--blue_);
+  border-color: var(--blue_);
+  transition-duration: 400ms;
 }
 
 /***---------Footer--INDEX.HTML------------***/
@@ -390,6 +437,15 @@ body {
   color: #ffffff;
 }
 
+.footer-social .footer-icon-list .li-icon .link-item:is(:hover, :focus) {
+  background-color: var(--green);
+  transition-duration: 400ms;
+}
+
+.div-footer-svg {
+  fill: #f4f4fd;
+}
+
 /***-----------PORTFOLIO-----------***/
 /*header*/
 
@@ -408,6 +464,11 @@ body {
 .li-solid:nth-child(8),
 .li-solid:nth-child(9) {
   margin-top: 25px;
+}
+
+.li-solid:is(:hover, :focus) {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .section-portfolio {
@@ -441,6 +502,9 @@ body {
 .section-portfolio .button_:is(:hover, :focus) {
   color: var(--white);
   background-color: var(--blue_);
+  transition-duration: 400ms;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .list-portfolio {
